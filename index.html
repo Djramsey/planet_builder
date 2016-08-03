@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build A Planet</title>
+ 
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ 
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+<div id='stars'></div>
+<div id='title'></div>
+ 
+  <br>
+  <div id="circle"></div>
+</head>
+<body>
+<!--Space background-->
+<div id='stars'></div>
+
+<h1 id="planetname"> </h1>
+<h1 id="score">0</h1> 
+
+<!--Planet goes here  -->
+<div id="planetandrings">
+  <div id="theplanet" onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')">
+    <div id="rocket-box"><img id="rocket-img" src="rocket.gif"></div>
+    <div id="square">
+      <div class="moon"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+    </div>
+    <div id="planetrings"></div>
+  </div>
+  
+</div>
+
+
+<!--Input to choose planet options goes here-->
+
+<div id="build-planet">
+  <h3>Build Your Planet</h3>
+
+  <label>
+    <span class="label-txt">Planet Size</span>
+    <input id="size">
+  </label>
+
+  <label>
+    <span class="label-txt">Planet Color</span>
+    <input id="planetcolor" >
+  </label>
+  <label>
+    <span class="label-txt">Planet Name</span>
+    <input id="planetnameinput" type="text" >
+  </label>
+  <label>
+    <span class="label-txt"></span>
+    <div id="build">Build</div>
+    <div id="moon-add">Moon</div>
+    <div id="ring-add">Ring</div>
+    <div id="rocket">Launch Rocket</div>
+  </label>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="form.js"></script>
+<script src = "music.js"></script>
+ <!--Music-->
+<audio id='mySound' src='http://www.tannerhelland.com/dmusic/FromHere.ogg'/>
+  <script src="myscripts.js"></script  
+</body>
+
+</html>
